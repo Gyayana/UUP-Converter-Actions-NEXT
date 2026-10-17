@@ -6,13 +6,12 @@ on:
 
 jobs:
   build:
-    runs-on: windows-2022
+    runs-on: windows-latest
     timeout-minutes: 1800
     
     steps:
       - name: Checkout
         uses: actions/checkout@v7
-
 
       - name: 将 uup / output 目录挂到 D 盘
         shell: pwsh
